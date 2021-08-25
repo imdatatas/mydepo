@@ -1,0 +1,13 @@
+// FbCylinder0X1Y
+// no limit sensor
+// 1 output
+// ex:
+//    cySt1Clamp(gCySt1ClampAct, wSt1ClampOnT, wSt1ClampOffT, ySt1Clamp);
+
+oDevice := iAct;
+
+tmrOnDelay(IN := oDevice, PT := INT_TO_TIME(iOnDelay*100));
+oOn := tmrOnDelay.Q;
+
+tmrOffDelay(IN := NOT oDevice, PT := INT_TO_TIME(iOffDelay*100));
+oOff := tmrOffDelay.Q;
