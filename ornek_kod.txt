@@ -11,3 +11,5 @@ oOn := tmrOnDelay.Q;
 
 tmrOffDelay(IN := NOT oDevice, PT := INT_TO_TIME(iOffDelay*100));
 oOff := tmrOffDelay.Q;
+
+//Buraya yeni comment eklendi.
